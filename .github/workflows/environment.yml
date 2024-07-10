@@ -14,9 +14,9 @@ jobs:
     runs-on: ubuntu-latest
 
     environment:
-      name: test
+      name: demo
       url: "https://github.com"
 
     steps:
       - name: "my secret deployment"
-        run: echo "my secret is {{ secrets.MYSECRET}}"
+        run: echo "my secret is ${{ secrets.MYSECRET }}"
