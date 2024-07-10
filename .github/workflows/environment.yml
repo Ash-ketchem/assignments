@@ -19,4 +19,4 @@ jobs:
 
     steps:
       - name: "my secret deployment"
-        run: echo "my secret is {{ secets.MYSECRET}}"
+        run: echo "my secret is {{ secrets.MYSECRET}}"
