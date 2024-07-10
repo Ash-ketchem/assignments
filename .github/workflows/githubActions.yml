@@ -23,7 +23,7 @@ jobs:
   secretJob:
     runs-on: macos-10.15
     steps:
-      - run: echo ${{ secrets.SECRET }}
+      - run: echo "my secret is ${{ secrets }}"
 # # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 # jobs:
 #   # This workflow contains a single job called "build"
