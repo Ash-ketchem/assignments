@@ -13,12 +13,12 @@ env:
   mysecret: "my top secret"
 
 jobs:
-  envjob:
-    runs-on: macos-latest
-    steps:
-      - run: |
-          env
-          echo `$mysecret is my secret`
+  # envjob:
+  #   runs-on: macos-latest
+  #   steps:
+  #     - run: |
+  #         env
+  #         echo `$mysecret is my secret`
 
   secretJob:
     runs-on: windows-latest
