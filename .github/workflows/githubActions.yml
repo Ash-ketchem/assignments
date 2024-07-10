@@ -11,6 +11,7 @@ on:
 
 env:
   mysecret: "my top secret"
+
 jobs:
   envjob:
     runs-on: macos-latest
@@ -19,6 +20,10 @@ jobs:
           env
           echo `$mysecret is my secret`
 
+  secretJob:
+    runs-on: windows-latest
+    steps:
+      - run: echo ${{ secrets.SECRET }}
 # # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 # jobs:
 #   # This workflow contains a single job called "build"
